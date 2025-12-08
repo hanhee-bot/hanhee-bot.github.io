@@ -1,12 +1,10 @@
 <!DOCTYPE html>
-<html>
-<!DOCTYPE html>
 <html lang="ko">
 <head>
     <meta charset="utf-8">
     <title>leehanhee</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <style>
         html, body {
             margin: 0;
@@ -16,46 +14,49 @@
 
         body {
             background-image: url('https://d2w9rnfcy7mm78.cloudfront.net/41332936/original_b9919c46ca8a141a0048e065737c1939.png?1763968129?bc=0');
-            background-size: cover;
-            background-position: center;
+            background-size: contain;
+            background-position: top center;
             background-repeat: no-repeat;
-            background-attachment: fixed;
+            position: relative;
         }
 
-        /* 공통 박스 스타일 */
-        .click-box {
+        .link-box {
             position: absolute;
             cursor: pointer;
-            /* 투명 박스 */
-            background-color: rgba(255, 0, 0, 2); /* 완전 투명 */
         }
 
-        /* 개별 위치 지정 */
+        /* 디버그 모드에서만 박스 색 표시 */
+        body.debug .link-box {
+            background-color: rgba(255, 0, 0, 0.4); /* 원하는 색으로 변경 */
+        }
+
         .box1 {
-            top: 30%; left: 22%;
-            width: 240px; height: 28px;
+            top: 27%;
+            left: 25%;
+            width: 22%;
+            height: 5%;
         }
 
         .box2 {
-            top: 60%; left: 61%;
-            width: 200px; height: 60px;
+            top: 45%;
+            left: 30%;
+            width: 15%;
+            height: 6%;
         }
 
         .box3 {
-            top: 70%; left: 50%;
-            width: 180px; height: 50px;
+            top: 70%;
+            left: 50%;
+            width: 14%;
+            height: 5%;
         }
+
     </style>
 </head>
 
-<body>
-
-    <!-- 박스 클릭 시 이동 -->
-    <a href="cv.html" class="click-box box1"></a>
-    <a href="works.html" class="click-box box2"></a>
-    <a href="contact.html" class="click-box box3"></a>
-
+<body class="debug">     <!-- ← 여기 debug 붙이면 색 보임 / 지우면 투명 -->
+    <a href="cv.html" class="link-box box1"></a>
+    <a href="works.html" class="link-box box2"></a>
+    <a href="about.html" class="link-box box3"></a>
 </body>
 </html>
-
-
