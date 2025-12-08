@@ -1,19 +1,61 @@
 <!DOCTYPE html>
 <html>
+<!DOCTYPE html>
+<html lang="ko">
 <head>
-	<meta charset="utf-8">
-	<title>제목</title>
-	<meta name="description" content="설명">
-	<meta name="keywords" content="키워드1, 키워드2">
-	<link rel="stylesheet" href="style.css">
-	<meta name="viewport" content="width=device-width, user-scalable=no">
-	<link rel="icon" type="image/png" href="">
-	<meta property="og:image" content="">
+    <meta charset="utf-8">
+    <title>leehanhee</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        body {
+            background-image: url('https://d2w9rnfcy7mm78.cloudfront.net/41332936/original_b9919c46ca8a141a0048e065737c1939.png?1763968129?bc=0');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        /* 공통 박스 스타일 */
+        .click-box {
+            position: absolute;
+            cursor: pointer;
+            /* 투명 박스 */
+            background-color: rgba(255, 0, 0, 2); /* 완전 투명 */
+        }
+
+        /* 개별 위치 지정 */
+        .box1 {
+            top: 30%; left: 22%;
+            width: 240px; height: 28px;
+        }
+
+        .box2 {
+            top: 60%; left: 61%;
+            width: 200px; height: 60px;
+        }
+
+        .box3 {
+            top: 70%; left: 50%;
+            width: 180px; height: 50px;
+        }
+    </style>
 </head>
+
 <body>
-	  background-image: url(""https://d2w9rnfcy7mm78.cloudfront.net/41332625/original_448426f200d04a71ecb56febf3e2b9c9.png?1763966722?bc=0");
-    background-size: cover;
-    background-position: center;overflow-y: hidden;
+
+    <!-- 박스 클릭 시 이동 -->
+    <a href="cv.html" class="click-box box1"></a>
+    <a href="works.html" class="click-box box2"></a>
+    <a href="contact.html" class="click-box box3"></a>
 
 </body>
 </html>
+
+
